@@ -1,0 +1,15 @@
+{
+    "baseURL": "https://unicornweb.dev",
+    "title": "Unicorn Web",
+    "theme": "null",
+    "languageCode": "en-us",
+    "params": {
+        "mainSections": ["blog", "posts"]
+    },
+    "menu": {
+        "main": [
+            { "name": "About", "url": "/about/", "weight": 2 },
+            { "name": "Blog", "url": "/blog/", "weight": 4 }
+        ]
+    }
+}

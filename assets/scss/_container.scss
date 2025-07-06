@@ -1,0 +1,20 @@
+.container {
+  max-width: var(--maxWidth);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spaceMd);
+  padding-right: var(--spaceMd);
+  box-sizing: border-box;
+}
+
+.top-space {
+  padding-top: var(--spaceLg);
+  padding-bottom: var(--spaceLg);
+  box-sizing: border-box;
+}
+
+.page-space {
+  padding-top: var(--spaceMd);
+  padding-bottom: var(--spaceMd);
+  box-sizing: border-box;
+}

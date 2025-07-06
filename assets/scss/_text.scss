@@ -1,0 +1,54 @@
+h1, h2, h3, h4, h5, h6 {
+    --color: var(--colorText);
+    --fontSize: var(--fontSize);
+    font-size: var(--fontSize);
+    font-weight: bold;
+    color: var(--color);
+    line-height: 1.2;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+h1, .vh1 {
+    --fontSize: clamp(2.3rem, 4.5vw, 3.7rem);
+}
+h2, .vh2 {
+    --fontSize: clamp(2rem, 4vw, 3rem);
+}
+h3, .vh3 {
+    --fontSize: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+h4, .vh4 {
+    --fontSize: clamp(1.5rem, 3vw, 2rem);
+}
+h5, .vh5 {
+    --fontSize: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+h6, .vh6 {
+    --fontSize: var(--fontSize);
+}
+
+p, .vp {
+    margin-top: 0;
+    margin-bottom: 1.25em;
+    --fontSize: var(--fontSize);
+    color: var(--textColor);
+}
+
+ul, ol {
+  margin: 1.25em 0;
+  padding-left: 2em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  color: var(--textColor);
+  font-size: var(--fontSize);
+  &.nav {
+    margin-bottom: 0;
+  }
+}
+
+.heading {
+    margin-top: 0.07em;
+}

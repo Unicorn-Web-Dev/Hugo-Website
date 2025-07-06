@@ -1,0 +1,23 @@
+a {
+    color: var(--colorPrimary);
+    text-decoration: none;
+
+    &:visited {
+        color: var(--colorPrimary);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--colorPrimary);
+        border-bottom: 1px solid var(--colorPrimaryDark);
+    }
+
+    &:active {
+        
+    }
+
+    &:focus {
+        outline: none;
+        border-bottom: 1px dashed var(--colorPrimaryDark);
+    }
+}

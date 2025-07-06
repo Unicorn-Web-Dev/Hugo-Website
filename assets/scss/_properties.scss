@@ -1,0 +1,42 @@
+:root {
+    --colorBg: #ebf1f7;
+    --colorBgLight: #f6fafe;
+    --colorText: #13232d;
+    --colorMutedText: #5f5f5f;
+
+    --colorPrimary: #7eb9de;
+    --colorPrimaryLight: #89c2e5;
+    --colorPrimaryDark: #428ebc;
+
+    --colorSecondary: #bfa6ea;
+    --colorSecondaryLight: #e3d9f7;
+    --colorSecondaryDark: #987ad1;
+
+    --colorSuccess: #98dfb6;
+    --colorSuccessLight: #cdefdd;
+    --colorSuccessDark: #5fbf8a;
+
+    --colorDanger: #f29ca3;
+    --colorDangerLight: #fbd6da;
+    --colorDangerDark: #dc5b65;
+
+    --colorWarning: #ffe3a3;
+    --colorWarningLight: #fff3ce;
+    --colorWarningDark: #e6bb55;
+
+    --colorBackground: #ffffff;
+    --colorSurface: #f9f9fb;
+    --colorText: #2c2c2c;
+    --colorMutedText: #6c6c6c;
+
+    --fontSize: clamp(1rem, 2vw, 1.65rem);
+
+    --maxWidth: 110ch;
+    --spaceSm: clamp(0.5rem, 1vw, 1rem);
+    --spaceMd: clamp(1rem, 2vw, 2rem);
+    --spaceLg: clamp(2rem, 4vw, 4rem);
+    --fontSize: clamp(1rem, 2vw, 1.5rem);
+
+    --colorLink: var(--colorPrimary);
+    --colorLinkHover: var(--colorPrimaryLight);
+}
