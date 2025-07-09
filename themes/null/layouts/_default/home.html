@@ -11,7 +11,9 @@
   {{ partial "navigation.html" . }}
   <div class="nav-spacer"></div>
   <main class="container top-space">
-    <h1 class="heading">{{ .Page.Title }}</h1>
+    <div class="txt-center"><img src="/images/unicorn-faded.jpg" alt="Unicorn Web" /></div>
+    <h1 class="h2 heading txt-center txt-secondary-dark uppercase">Our logo is a <span class="txt-primary-dark">f*#%ing Unicorn</span></h1>
+    <p class="txt-center">Yes, we can probably handle your web design or development project.</p>
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
     {{ range $paginator.Pages }}
       {{ .Render "summary" }}

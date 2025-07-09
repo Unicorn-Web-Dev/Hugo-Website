@@ -1,38 +1,41 @@
+* {
+    color: var(--color, inherit);
+}
+
 h1, h2, h3, h4, h5, h6 {
     --color: var(--colorText);
     --fontSize: var(--fontSize);
     font-size: var(--fontSize);
-    font-weight: bold;
-    color: var(--color);
+    font-weight: var(--fontWeight, bold);
     line-height: 1.2;
     margin-top: 2em;
     margin-bottom: 0.5em;
 }
 
-h1, .vh1 {
+h1, .h1 {
     --fontSize: clamp(2.3rem, 4.5vw, 3.7rem);
 }
-h2, .vh2 {
+h2, .h2 {
     --fontSize: clamp(2rem, 4vw, 3rem);
 }
-h3, .vh3 {
+h3, .h3 {
     --fontSize: clamp(1.75rem, 3.5vw, 2.5rem);
 }
-h4, .vh4 {
+h4, .h4 {
     --fontSize: clamp(1.5rem, 3vw, 2rem);
 }
-h5, .vh5 {
+h5, .h5 {
     --fontSize: clamp(1.25rem, 2.5vw, 1.75rem);
 }
-h6, .vh6 {
+h6, .h6 {
     --fontSize: var(--fontSize);
 }
 
-p, .vp {
+p, .p {
     margin-top: 0;
     margin-bottom: 1.25em;
-    --fontSize: var(--fontSize);
-    color: var(--textColor);
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight, normal);
 }
 
 ul, ol {
@@ -41,14 +44,42 @@ ul, ol {
 }
 
 li {
-  margin-bottom: 0.5em;
-  color: var(--textColor);
-  font-size: var(--fontSize);
-  &.nav {
-    margin-bottom: 0;
-  }
+    margin-bottom: 0.5em;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight, normal);
+    &.nav {
+        margin-bottom: 0;
+    }
 }
 
 .heading {
     margin-top: 0.07em;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.txt-primary {
+    --color: var(--colorPrimary);
+}
+
+.txt-primary-dark {
+    --color: var(--colorPrimaryDark);
+}
+
+.txt-secondary {
+    --color: var(--colorSecondary);
+}
+
+.txt-secondary-dark {
+    --color: var(--colorSecondaryDark);
+}
+
+.semibold {
+    --fontWeight: semibold;
 }

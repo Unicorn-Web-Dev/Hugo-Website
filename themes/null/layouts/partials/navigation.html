@@ -1,6 +1,8 @@
 <nav class="flex flex-middle {{ .Params.navclass }}">
     <div class="container flex flex-middle flex-between width--100">
-        <a href="{{ .Site.BaseURL }}" class="logo">{{ .Site.Title }}</a>
+        <a href="{{ .Site.BaseURL }}" class="logo flex flex-middle">
+            <img src="/images/unicorn-web-logo.png" width="123" height="150" alt="{{ .Site.Title }}" /> <span class="ml--05">Unicorn Web</span>
+        </a>
         <ul class="">
             {{ range .Site.Menus.main }}
             <li class="nav"><a href="{{ .URL }}">{{ .Name }}</a></li>
