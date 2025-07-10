@@ -12,25 +12,12 @@
   <div class="nav-spacer"></div>
   <main class="container top-space">
     <div class="txt-center"><img src="/images/unicorn-faded.jpg" alt="Unicorn Web" /></div>
-    <h1 class="h2 heading txt-center txt-secondary-dark uppercase">Our logo is a <span class="txt-primary-dark">f*#%ing Unicorn</span></h1>
-    <p class="txt-center">Yes, we can probably handle your web design or development project.</p>
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-    {{ range $paginator.Pages }}
-      {{ .Render "summary" }}
-    {{ else }}
-      <p>No posts found...</p>
-    {{ end }}
-
-    {{ if gt $paginator.TotalPages 1 }}
-      <nav>
-        {{ if $paginator.HasPrev }}
-          <a href="{{ $paginator.Prev.URL }}">Previous</a>
-        {{ end }}
-        {{ if $paginator.HasNext }}
-          <a href="{{ $paginator.Next.URL }}">Next</a>
-        {{ end }}
-      </nav>
-    {{ end }}
+    <h1 class="h2 heading txt-center txt-secondary-dark mt--05"><span class="txt-primary-dark">Unicorn</span> Web Design / Dev</h1>
+    <p class="txt-center">The unicorn is like... a metaphor. It represents how f#&*% rare it is to find a freelance web developer who won't try to sell you shit you don't need.</p>
+    <h2 class="h3 heading txt-center mt--10">Services We Offer</h2>
+    <div class="grid">
+        <div class="w--100 w--50@m">Test</div>
+    </div>
   </main>
 </body>
 </html>

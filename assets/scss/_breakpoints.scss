@@ -1,0 +1,17 @@
+// Breakpoints
+$breakpoints: (
+  s: 767px,
+  m: 960px,
+  l: 1200px
+);
+
+// Media query mixin
+@mixin respond($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$size}' not found in $breakpoints map.";
+  }
+}

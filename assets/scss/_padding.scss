@@ -19,7 +19,7 @@ $directions: (
     // Single direction
     @if type-of($dir) == string {
       .m#{$abbr}--#{$key} {
-        margin-#{$dir}: #{$val};
+        padding-#{$dir}: #{$val};
       }
     }
 
@@ -27,7 +27,7 @@ $directions: (
     @else if type-of($dir) == list {
       .m#{$abbr}--#{$key} {
         @each $d in $dir {
-          margin-#{$d}: #{$val};
+          padding-#{$d}: #{$val};
         }
       }
     }

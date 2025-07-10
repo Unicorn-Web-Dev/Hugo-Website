@@ -1,11 +1,15 @@
 @import "properties";
+@import "breakpoints";
+@import "text";
 @import "flex";
+@import "width";
 @import "image";
 @import "margin";
+@import "padding";
 @import "display";
-@import "text";
 @import "container";
 @import "link";
+@import "card";
 
 * {
   box-sizing: border-box;
@@ -47,7 +51,16 @@ nav {
 
 .logo {
     margin-right: 0.5em;
-    color: var(--colorPrimary);
+    span {
+      --color: var(--colorSecondaryDark);
+    }
+    &:hover {
+      text-decoration: none;
+      border: none;
+      span {
+        --color: var(--colorPrimary);
+      }
+    }
     img {
       max-height: 2em;
       width: auto;

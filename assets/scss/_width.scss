@@ -1,0 +1,26 @@
+$widths: (
+  100: 100%,
+  75: 75%,
+  66: 66.6667%,
+  50: 50%,
+  33: 33.3333%,
+  25: 25%
+);
+
+// Base width classes (no breakpoint)
+@each $key, $val in $widths {
+  .w--#{$key} {
+    width: $val;
+  }
+}
+
+// Responsive width classes
+@each $breakpoint, $bpVal in $breakpoints {
+  @each $key, $val in $widths {
+    @include respond($breakpoint) {
+      .w--#{$key}\@#{$breakpoint} {
+        width: $val;
+      }
+    }
+  }
+}
